@@ -1,0 +1,70 @@
+.project-details {
+    min-height: 80vh;
+    display: flex;
+    padding-block: 110px;
+
+    .project-info {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .logo-container {
+        height: fit-content;
+        padding: 30px;
+
+        &.agenda {
+            background-color: var(--clr-white);
+        }
+
+        img {
+            max-width: 250px;
+        }
+    }
+
+    h2 {
+        padding-inline-start: 8px;
+        font-size: 33px;
+        text-transform: capitalize;
+    }
+
+    p {
+        padding-inline-start: 8px;
+        max-width: 400px;
+    }
+
+    .btns-container {
+        margin-top: 15px;
+        padding-inline-start: 8px;
+        gap: 18px;
+
+        a {
+            font-size: 13px;
+            background-color: transparent;
+            padding: 8px;
+            border-radius: 0.4em;
+            border: 1px solid var(--clr-white);
+            transition: 0.3s;
+            text-decoration: none;
+
+            &:hover {
+                scale: 1.08;
+                border: none;
+                &.github {
+                    background-color: var(--clr-purple);
+                }
+
+                &.website {
+                    background-color: var(--clr-blue);
+                }
+            }
+
+            svg {
+                margin-inline-end: 5px;
+                height: 20px;
+                width: 20px;
+                fill: var(--clr-white);
+            }
+        }
+    }
+}

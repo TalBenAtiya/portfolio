@@ -1,0 +1,90 @@
+.app-header {
+    padding-block: 8px;
+    position: sticky;
+    top: 0px;
+    top: 0;
+    width: 100%;
+    transition: 0.6s;
+    z-index: 10;
+
+    &.scrolled {
+        background-color: var(--clr-header);
+        
+        .main-header {
+            padding-inline: 60px;
+        }
+    }
+
+    .main-header {
+        padding-inline: 25px;
+        justify-content: space-between;
+        transition: 0.6s;
+    }
+
+    .btn-resume {
+        height: fit-content;
+        background-color: transparent;
+        border: 1px solid var(--clr-white);
+        transition: 0.3s ease-in-out;
+        padding: 9px;
+
+        &:hover {
+            background-color: var(--clr-purple);
+            border: 1px solid transparent;
+            scale: 1.15;
+        }
+    }
+
+    .logo-container {
+        .logo {
+            width: 80px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    nav {
+        cursor: pointer;
+
+        li {
+            overflow: hidden;
+            padding-inline: 10px;
+            
+        }
+
+        span {
+            padding: 8px;
+            display: flex;
+            color: var(--clr-white);
+            position: relative;
+            transition: 0.2s ease-in-out;
+            
+
+            .box {
+                position: absolute;
+                left: 0;
+                top: 5.5px;
+                background-color: var(--clr-purple);
+                width: 100%;
+                height: 25px;
+                z-index: -1;
+                transition: 0.4s;
+                translate: -100px;
+                border-top-right-radius: 0.3em;
+                border-bottom-right-radius: 0.3em;
+                border-left: 2px solid var(--clr-white);
+            }
+
+            &:hover {
+                color: var(--clr-black);
+                scale: 1.2;
+
+                .box {
+                    translate: 0px;
+                }
+            }
+        }
+    }
+}

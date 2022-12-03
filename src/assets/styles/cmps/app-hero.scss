@@ -1,0 +1,88 @@
+.app-hero {
+    .hero-container {
+        min-height: 78vh;
+        height: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+
+        .information {
+            flex: 3;
+        }
+
+        .small-header {
+            margin-bottom: 15px;
+        }
+
+        .my-name {
+            padding-inline-start: 3px;
+            font-family: jakarta;
+            font-size: 40px;
+            letter-spacing: 0.4px;
+            margin-bottom: 30px;
+
+            .last-name {
+                color: var(--clr-purple);
+            }
+
+        }
+
+        .description {
+            padding-inline-start: 7px;
+            max-width: 450px;
+            line-height: 35px;
+
+            span {
+                display: block;
+            }
+
+            .social-media {
+                margin-top: 30px;
+                gap: 20px;
+
+                .svg {
+                    cursor: pointer;
+                    width: 25px;
+                    height: 25px;
+
+                    &:hover {
+                        path {
+                            transition: 0.3s;
+                            fill: var(--clr-purple);
+                        }
+                    }
+                }
+            }
+        }
+
+        .img-container {
+            width: fit-content;
+            flex: 1;
+            min-height: 400px;
+            min-width: 300px;
+            position: relative;
+
+            .box {
+                position: absolute;
+                height: 300px;
+                width: 230px;
+                top: 200px;
+                left: 50%;
+                translate: -50% -50%;
+                border-radius: 1.2em;
+                background-color: var(--clr-white);
+            }
+
+            .empty-box {
+             rotate: -15deg;
+             background-color: var(--clr-purple);       
+            }
+
+            .img-box {
+                background-image: url(../../img/tal-portfolio.jpg);
+                background-size: cover;
+            }
+        }
+    }
+}

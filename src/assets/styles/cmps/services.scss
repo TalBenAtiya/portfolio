@@ -1,0 +1,75 @@
+.services-box {
+    background-color: var(--clr-purple);
+    min-height: 80vh;
+
+    .skills {
+        background-color: rgba(255, 255, 255, 0.233);
+        padding: 8px;
+        padding-inline: 60px;
+        width: 100%;
+        justify-content: space-between;
+
+        .svg {
+            width: 40px;
+            height: 40px;
+
+            &:hover {
+                scale: 1.1;
+            }
+        }
+    }
+}
+
+.services {
+    flex-direction: column;
+    align-items: center;
+    padding-block: 110px;
+
+    
+
+    .small-header {
+        padding-inline-end: 50px;
+    }
+
+    h2 {
+        font-size: 33px;
+        margin-bottom: 80px;
+    }
+
+    .specialties-container {
+        width: 100%;
+        justify-content: space-between;
+
+        .card {
+            color: var(--clr-black);
+            display: flex;
+            flex-direction: column;
+            min-width: 280px;
+            min-height: 250px;
+            background-color: white;
+            border-radius: 0.5em;
+            padding-inline: 15px;
+            padding-block: 25px;
+            align-items: center;
+            text-align: center;
+            gap: 25px;
+
+            img {
+                width: 60px;
+            }
+
+            h3 {
+                font-family: jakarta-medium;
+                font-weight: 500;
+                line-height: 7px;
+            }
+
+            p {
+                font-size: 13px;
+                max-width: 220px;
+                font-weight: 400;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,39 @@
+:root {
+    --clr-black: rgb(30, 30, 30);
+    --clr-gray: rgb(63, 63, 63);
+    --clr-white: rgb(225, 225, 225);
+    --clr-header: rgb(24, 24, 24);
+    --clr-purple: rgb(126, 116, 241);
+    --clr-blue: rgb(9, 115, 254);
+    --clr-purple-light: rgb(187, 182, 255);
+}
+
+@font-face {
+    font-family: jakarta;
+    src: url(../../fonts/jakarta/PlusJakartaSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: jakarta-medium;
+    src: url(../../fonts/jakarta/PlusJakartaSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: inter-light;
+    src: url(../../fonts/inter/Inter-Light.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(../../fonts/inter/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: inter-medium;
+    src: url(../../fonts/inter/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: inter-bold;
+    src: url(../../fonts/inter/Inter-Bold.ttf);
+}

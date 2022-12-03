@@ -1,0 +1,17 @@
+//BASICS
+@import './basics/variables';
+@import './basics/base';
+@import './basics/layout';
+@import './basics/helpers';
+
+
+//CMPS
+@import './cmps/app-header';
+@import './cmps/app-hero';
+@import './cmps/services';
+@import './cmps/my-work';
+@import './cmps/about-me';
+@import './cmps/contact';
+
+//VIEWS
+@import './views/project-details';
