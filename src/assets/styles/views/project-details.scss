@@ -1,12 +1,94 @@
+.background {
+    background-color: rgba(56, 56, 56, 0.444);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .project-details {
-    min-height: 80vh;
+    top: 50%;
+    left: 50%;
+    max-height: 500px;
+    overflow: scroll;
+    min-width: 850px;
+    max-width: 880px;
+    translate: -50% -50%;
+    position: fixed;
     display: flex;
-    padding-block: 110px;
+    flex-direction: column;
+    background-color: var(--clr-black);
+    padding: 50px;
+    justify-content: space-between;
+    border-radius: 0.6em;
+    box-shadow: 0px 0px 20px -1px rgb(0, 0, 0);
+    transition: 5s;
+
+    @media (max-width: 880px) {
+        min-width: 375px;
+        max-width: 100%;
+        padding: 20px;
+        left: 0;
+        translate: 0 -50%;
+    }
+
+    .img-container {
+        padding-block: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            border: 1px solid var(--clr-white);
+        }
+
+    }
+
+    .container {
+        justify-content: space-between;
+        width: 100%;
+
+        @media (max-width: 880px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    .btn-close {
+        justify-content: center;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: 0.3s;
+
+        svg {
+
+            path {
+                fill: var(--clr-white);
+            }
+        }
+
+        &:hover {
+            scale: 1.3;
+
+            svg {
+                path {
+                    fill: var(--clr-red);
+                }
+            }
+        }
+    }
 
     .project-info {
         display: flex;
         flex-direction: column;
-        flex: 1;
     }
 
     .logo-container {
@@ -50,6 +132,7 @@
             &:hover {
                 scale: 1.08;
                 border: none;
+
                 &.github {
                     background-color: var(--clr-purple);
                 }

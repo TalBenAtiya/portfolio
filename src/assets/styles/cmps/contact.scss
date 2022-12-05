@@ -1,14 +1,13 @@
 .contact {
     background-color: var(--clr-purple);
     padding-block: 80px;
-    
+
     .container {
         .small-header {
             padding-inline-end: 70px;
         }
 
         h2 {
-            font-size: 33px;
             padding-inline-start: 50px;
         }
 
@@ -16,5 +15,46 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+
+    form {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+
+        input,
+        textarea {
+            margin-bottom: 10px;
+            background-color: white;
+            outline: none;
+            border: none;
+            padding: 5px;
+            border-radius: 0.3em;
+            font-family: inter-light;
+            color: var(--clr-black);
+        }
+
+        label {
+            margin-bottom: 4px;
+        }
+
+        .btn-send {
+            margin-top: 15px;
+            background-color: var(--clr-purple);
+            border: 1px solid var(--clr-white);
+            color: var(--clr-white);
+            transition: 0.2s;
+            padding-block: 5px;
+
+            &:hover {
+                background-color: var(--clr-blue);
+                border: 1px solid transparent;
+            }
+        }
+
+        span {
+            width: 100%;
+            text-align: center;
+        }
     }
 }

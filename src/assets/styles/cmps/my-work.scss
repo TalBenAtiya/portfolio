@@ -1,15 +1,16 @@
 .my-work {
     padding-block: 110px;
+    margin-block: 60px;
 
     h2 {
         padding-inline-start: 5px;
-        font-size: 33px;
     }
 
     .project-container {
         margin-top: 80px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+       justify-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
     .project-card {
@@ -21,8 +22,9 @@
         transition: 0.7s;
         overflow: hidden;
         position: relative;
-        height: 280px;
-        min-width: 350px;
+        height: 250px;
+        max-width: 400px;
+        min-width: 250;
 
         button {
             font-family: jakarta-medium;

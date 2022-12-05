@@ -9,12 +9,18 @@
         width: 100%;
         justify-content: space-between;
 
+        @media (max-width: 1000px) {
+            padding-inline: 15px;
+        }
+
+
         .svg {
             width: 40px;
             height: 40px;
 
-            &:hover {
-                scale: 1.1;
+            @media (max-width: 1000px) {
+                width: 20px;
+                height: 20px;
             }
         }
     }
@@ -32,13 +38,17 @@
     }
 
     h2 {
-        font-size: 33px;
         margin-bottom: 80px;
     }
 
     .specialties-container {
         width: 100%;
+        gap: 10px;
         justify-content: space-between;
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+        }
 
         .card {
             color: var(--clr-black);

@@ -1,4 +1,4 @@
-import { OrbitControls, TrackballControls } from '@react-three/drei'
+import { TrackballControls } from '@react-three/drei'
 import { Lights } from './lights'
 import { Cloud } from './cloud'
 

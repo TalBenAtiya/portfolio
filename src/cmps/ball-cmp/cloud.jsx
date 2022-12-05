@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { useRef, useState, useMemo, useEffect } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { Text } from '@react-three/drei'
-import JakartaBold from '../assets/fonts/jakarta/PlusJakartaSans-Bold.ttf'
+import JakartaBold from '../../assets/fonts/jakarta/PlusJakartaSans-Bold.ttf'
 
 const Word = ({ children, ...props }) => {
     const fontProps = { font: JakartaBold, fontSize: 2.5, letterSpacing: -0.05, lineHeight: 1, 'material-toneMapped': false }
@@ -24,16 +24,13 @@ const Word = ({ children, ...props }) => {
 }
 
 export const Cloud = ({ count = 4, radius = 20 }) => {
-    // const wordsTemp = ['JavaScript','TypeScript','React','Redux','Node.JS','MongoDB','Vue','Angular','Bootstrap','HTML','CSS','SASS']
     const wordsTemp = [['JavaScript', 'TypeScript', 'React', 'Illustraitor'], ['Redux', 'Node.JS', 'MongoDB', 'Photoshop'], ['Vue', 'Angular', 'Bootstrap', 'JQuery'], ['HTML', 'CSS', 'SASS', 'Socket.IO']]
-    // Create a count x count random words with spherical distribution
     const words = useMemo(() => {
         const temp = []
         const spherical = new THREE.Spherical()
         const phiSpan = Math.PI / (count + 1)
         const thetaSpan = (Math.PI * 2) / count
         for (let i = 1; i < count + 1; i++) {
-            // Taken from https://discourse.threejs.org/t/can-i-place-obects-on-a-sphere-surface-evenly/4773/6
             for (let j = 0; j < count; j++) {
                 temp.push([new THREE.Vector3().setFromSpherical(spherical.set(radius, phiSpan * i, thetaSpan * j)), wordsTemp[i-1][j]])
             }
