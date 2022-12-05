@@ -12,7 +12,7 @@ export const AppHero = () => {
                     <h5 className="small-header">
                         <span className="rectangle"><SmallLine /></span>my name is
                     </h5>
-                    <div data-aos="fade-right" data-aos-anchor-placement="center-center">
+                    <div data-aos="fade-right" data-aos-anchor-placement="center-center" data-aos-offset="-150">
                         <h2 className="my-name">
                             Tal <span className="last-name">Ben Atiya <SmallDot /> </span>
                         </h2>
