@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://TalBenAtiya.github.io/portfolio",
+  "homepage": "http://TalBenAtiya.github.io/portfolio/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@react-three/drei": "^9.46.0",
