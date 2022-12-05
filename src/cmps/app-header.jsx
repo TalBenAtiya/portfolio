@@ -49,8 +49,8 @@ export const AppHeader = () => {
                     <a onClick={routeHome} href="#contact"><span><div className="box"></div> Contact</span></a>
                 </nav>
                 <div className="flex align-center">
-                    <button onClick={toggleMenu} className="hamburger">
-                        <div id="nav-icon1">
+                    <button onClick={toggleMenu} className={"hamburger"}>
+                        <div id="nav-icon1" className={isMenuOpen ? "open" : ""}>
                             <span></span>
                             <span></span>
                             <span></span>

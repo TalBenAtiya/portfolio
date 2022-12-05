@@ -44,3 +44,16 @@ h2 {
   font-size: 30px;
   font-family: jakarta;
 }
+
+body::-webkit-scrollbar {
+  width: 3px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--clr-gray);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-white);    /* color of the scroll thumb */
+  border-radius: 2em;       /* roundness of the scroll thumb */
+}
