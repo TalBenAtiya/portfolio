@@ -10,7 +10,7 @@ function App() {
       <main className='main-container'>
         <Routes>
           <Route path='/' element={<AppView />} >
-          <Route path='/:projectName' element={<ProjectDetails />} />
+          <Route path='project/:projectName' element={<ProjectDetails />} />
           </Route>
         </Routes>
       </main>

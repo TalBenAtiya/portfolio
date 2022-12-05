@@ -14,7 +14,7 @@ export const MyWork = () => {
             <h2>Featured Projects</h2>
             <div className="project-container">
                 {projects.map(project => {
-                    return <Link to={`${project.name}`} key={project._id}
+                    return <Link to={`project/${project.name}`} key={project._id}
                         className={`project-card ${project.name}`}>
                         <img className={`${project.name}`} src={require(`../assets/img/${project.name}.png`)} alt='Project Logo' />
                         <button><span>View Project</span></button>

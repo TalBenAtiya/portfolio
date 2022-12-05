@@ -12,6 +12,7 @@ export const AppView = () => {
 
     useEffect(() => {
         const projectName = params.projectName
+        console.log('projectName:', projectName)
         if (projectName) {
             document.body.classList.add("modal-open");
         } else {
