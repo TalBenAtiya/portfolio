@@ -27,6 +27,7 @@ export const AppHeader = () => {
 
     const routeHome = () => {
         navigate('/')
+        setIsMenuOpen(false)
     }
 
     const toggleMenu = () => {
@@ -37,16 +38,16 @@ export const AppHeader = () => {
         <section className={"app-header" + (isScrolled ? " scrolled" : "")}>
             <header className="flex align-center main-layout main-header">
                 <div className="flex align-center logo-container">
-                    <a href="#my-portfolio" className="logo">
+                    <a onClick={routeHome} href="/#my-portfolio" className="logo">
                         <img src={require("../assets/img/PortfolioLogo.png")} alt="Logo" />
                         <UpArrowSvg className={(isScrolled ? "scrolled" : "")} />
                     </a>
                 </div>
                 <nav className={isMenuOpen ? 'flex align-center open' : 'flex align-center'}>
-                    <a onClick={routeHome} href="#services"><span><div className="box"></div> Services</span></a>
-                    <a onClick={routeHome} href="#my-works"><span><div className="box"></div>My Works</span></a>
-                    <a onClick={routeHome} href="#about"><span><div className="box"></div> About</span></a>
-                    <a onClick={routeHome} href="#contact"><span><div className="box"></div> Contact</span></a>
+                    <a onClick={routeHome} href="/#services"><span><div className="box"></div> Services</span></a>
+                    <a onClick={routeHome} href="/#my-works"><span><div className="box"></div>My Works</span></a>
+                    <a onClick={routeHome} href="/#about"><span><div className="box"></div> About</span></a>
+                    <a onClick={routeHome} href="/#contact"><span><div className="box"></div> Contact</span></a>
                 </nav>
                 <div className="flex align-center">
                     <button onClick={toggleMenu} className={"hamburger"}>
@@ -56,7 +57,7 @@ export const AppHeader = () => {
                             <span></span>
                         </div>
                     </button>
-                    <button className="btn btn-resume">Resume</button>
+                    <a href={require('../assets/resume/resume.pdf')} download="Tal Ben Atiya - CV"><button className="btn btn-resume">Resume</button></a>
                 </div>
             </header>
         </section>

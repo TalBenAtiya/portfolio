@@ -17,7 +17,7 @@ export const AboutMe = () => {
                     A highly motivated, responsible, hard worker with quick adaptation to new enviorments.
                 </p>
             </div>
-            <div data-aos="fade-left" data-aos-anchor-placement="center-center" data-aos-offset="-400">
+            <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-offset="-400">
                 <Canvas   
                     shadows
                     camera={{
